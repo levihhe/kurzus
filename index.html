@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurzusok és Diákok</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Válassz kategóriát</h1>
+    <button onclick="loadData('courses')">Kurzusok</button>
+    <button onclick="loadData('students')">Diákok</button>
+    
+    <div class="container">
+        <div id="data-list"></div>
+        
+        <div id="course-form" style="display: none;">
+            <h2>Új kurzus hozzáadása</h2>
+            <input type="text" id="course-name" placeholder="Kurzus neve">
+            <button onclick="addCourse()">Hozzáadás</button>
+        </div>
+        
+        <div id="student-form" style="display: none;">
+            <h2>Új diák hozzáadása</h2>
+            <input type="text" id="student-name" placeholder="Diák neve">
+            <button onclick="addStudent()">Hozzáadás</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
